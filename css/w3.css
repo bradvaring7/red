@@ -1375,7 +1375,7 @@ a {
 }
 
 .w3-jumbo {
-    font-size: 48px !important
+    font-size: 64px !important
 }
 
 .w3-left-align {
@@ -1651,7 +1651,7 @@ a {
 .w3-red,
 .w3-hover-red:hover {
     color: #fff !important;
-    background-color: #00921d !important
+    background-color: #f44336 !important
 }
 
 .w3-sand,
@@ -1717,7 +1717,7 @@ a {
 .w3-crimson,
 .w3-hover-crimson:hover {
     color: #fff !important;
-    background-color:green !important
+    background-color: #a20025 !important
 }
 
 .w3-cobalt,
