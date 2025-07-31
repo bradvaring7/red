@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Poppins", sans-serif
+    }
+
+    body {
+      font-size: 16px;
+    }
+
+    .w3-half img {
+      opacity: 0.8;
+      cursor: pointer
+    }
+
+    .w3-half img:hover {
+      opacity: 1
+    }
+    /* Force large font size for Loyalty Transfer box */
+    .loyalty-transfer-box {
+      font-size: 1.49em !important;
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"
+    id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container w3-padding-32">
+      <img src="/assets/picture2.png" alt="Greenix logo" style="max-width: 70%;">
+    </div>
+    <div class="w3-bar-block">
+      <a href="/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Customer Service</a>
+      <a href="/services.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a>
+      <a href="/pros.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Service Pros</a>
+      <a href="/general.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">General Info</a>
+      <a href="/forms.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Forms</a>
+      <a href="http://greenixpc.com" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" target="_blank"
+        rel="noopener">Greenixpc.com</a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Menu</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:340px;margin-right:40px;">
+
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:80px" id="showcase">
+      <h1 class="w3-jumbo"><b>Customer Service</b></h1>
+    </div>
+
+    <!-- Call Flow -->
+
+    <div class="w3-container" id="callflow" style="margin-top:20px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>Call Flow</b></h1>
+      <hr style="width: 100px; border: 5px solid #00c500;" class="w3-round shadow">
+
+      <div class="row" style="display: flex; align-items: stretch; width: 100%; gap: 2rem;">
+        <div class="w3-white-box" style="flex: 1 1 0;">
+          <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EVtt1MKvXvdEkIW-yZR6c_cBovfDJTwnFgcRK3Lue3LEGw?e=9DoLm9" target="_blank">Call Flow</a></h4>
+          <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EbQpSgUlSk1Jk4X1-h7pnTcBIagitSU9RzrPm7Q2zYAVUQ?e=bPogCs" target="_blank">Call Flow Scripts</a></h4>
+          <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EbgkRyHAHcJNlcvWPOjPHwMBFao7IgjiLv5mJxm4iUc3BA?e=yc0kQI" target="_blank">Tier 1 Offers</a></h4>
+          <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/Ec8qIypOSNpPrZIEt6ALIFkBbbHByv0mrB4UOg0Z22_dfw?e=RnE2xc" target="_blank">Tier 2 Offers</a></h4>
+        </div>
+        <div class="w3-white-box" style="flex: 1 1 0;">
+          <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EWrRIH2QyKpEnpy0_1qCWPIBj5iV0cmlewv4NUbzsReMhQ?e=eO3OhB" target="_blank">Incoming Call Colors</a></h4>
+          <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EYT7pCoiTLFGsN2SGiO84hABa4qSABYTxRVfELu3wvgStQ?e=cZgtS3" target="_blank">Diagnostic Questions</a></h4>
+          <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EatQmZrhV89NjwLn-Nx9648Bq3w8VEpRq2_y4et41gR5Bw?e=vYvgpB" target="_blank">Discovery</a></h4>
+          <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EWfuVXwmELJPuVDdRZ-rfiUBQgbD_9LVuW4iRXBrd55ZNA?e=dI9m84" target="_blank">Triple A</a></h4>
+        </div>
+        <div class="w3-white-box" style="flex: 1 1 0;">
+          <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EeFFMlC5X1xNhXJ8lMR9N3MBm8B20FMN8uK4Q0XI07ZMUQ?e=scl7DQ" target="_blank">Building Value Scripts</a></h4>
+          <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EdQB1agPVadNk1d1sU15RnwB0MOO7et6-sMADGVgdLADgQ?e=4dWcme" target="_blank">Building Value Reservices</a></h4>
+          <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EWt6hxSGI6NMtm9zPSTWDSUBZdU4jC7oP2lRtDB4ORq4mg?e=Fptdl2" target="_blank">Building Value TFM</a></h4>
+          <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EX4X5knWb0lCsoA44R66JGwB2BeGJYUXgP14l5VBktFy1A?e=Cn8uyE" target="_blank">Call Metrics</a></h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cancel Requests-->
+    <div class="w3-container" id="scheduling" style="margin-top:60px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>Cancel Requests</b></h1>
+      <hr style="width:100px;border:5px solid #00c500" class="w3-round shadow">
+      <div class="row" style="display: flex; align-items: stretch; width: 100%; gap: 2rem;">
+        <div class="w3-white-box" style="width:100%; flex: 1 1 100%;">
+          <table class="w3-table w3-bordered w3-small loyalty-transfer-box" style="width:100%; background: #f9f9f9; margin-bottom: 1em;">
+            <tr style="background:#e0f7fa; font-weight:bold;">
+              <td colspan="2" style="text-align:center; font-size:1.1em;">LOYALTY TRANSFER</td>
+            </tr>
+            <tr>
+              <td style="font-weight:bold; width:50%;">When to Transfer</td>
+              <td style="font-weight:bold; width:50%;">What to Say</td>
+            </tr>
+            <tr>
+              <td>Customer requests to cancel</td>
+              <td>"I can help you with that! Let me get you to our Loyalty Team who specializes in cancellations and can help you further."</td>
+            </tr>
+            <tr>
+              <td>Customer is upset about price</td>
+              <td>"Our Loyalty Team has access to special offers and solutions. Let me connect you with them!"</td>
+            </tr>
+            <tr>
+              <td>Customer requests to pause service</td>
+              <td>"Our Loyalty Team can review your account and discuss options for pausing your service. I'll transfer you now."</td>
+            </tr>
+            <tr>
+              <td>Customer requests to remove a service</td>
+              <td>"Let me get you to our Loyalty Team who can help with changes to your services."</td>
+            </tr>
+            <tr>
+              <td>Customer requests to change frequency</td>
+              <td>"Our Loyalty Team can help with adjusting your service frequency. I'll transfer you now."</td>
+            </tr>
+            <tr>
+              <td>Customer requests to change price</td>
+              <td>"Our Loyalty Team can review your account for any available discounts or adjustments. Let me connect you with them!"</td>
+            </tr>
+            <tr>
+              <td>Customer requests to change plan</td>
+              <td>"Our Loyalty Team can help you explore other plan options. I'll transfer you now."</td>
+            </tr>
+            <tr>
+              <td>Customer requests to change payment date</td>
+              <td>"Our Loyalty Team can help with payment date changes. Let me connect you with them!"</td>
+            </tr>
+            <tr>
+              <td>Customer requests to change payment method</td>
+              <td>"Our Loyalty Team can help update your payment method. I'll transfer you now."</td>
+            </tr>
+            <tr>
+              <td>Customer requests to update contact info</td>
+              <td>"Our Loyalty Team can help update your contact information. Let me connect you with them!"</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Transfers and Tiers-->
+    <div class="w3-container" id="transfers" style="margin-top:60px">
+
+      <h1 class="w3-xxxlarge w3-text-red"><b>Tiers & Transfers</b></h1>
+      <hr style="width: 100px; border: 5px solid #00c500;" class="w3-round shadow">
+
+      <div class="row" style="display: flex; align-items: stretch; width: 100%; gap: 2rem;">
+        <div class="w3-white-box" style="flex: 1 1 0;">
+          <h4 class="w3-text-green fat"><a href="#" target="_blank">Call Flow</a></h4>
+          <h4 class="w3-text-green fat"><a href="#" target="_blank">Call Flow Scripts</a></h4>
+          <h4 class="w3-text-green fat"><a href="#" target="_blank">Call Flow Scripts</a></h4>
+          <h4 class="w3-text-green fat"><a href="#" target="_blank">Call Flow Scripts</a></h4>
+        </div>
+        <div class="w3-white-box" style="flex: 1 1 0;">
+          <h4 class="w3-text-green fat"><a href="#" target="_blank">Call Flow</a></h4>
+          <h4 class="w3-text-green fat"><a href="#" target="_blank">Call Flow Scripts</a></h4>
+          <h4 class="w3-text-green fat"><a href="#" target="_blank">Call Flow Scripts</a></h4>
+          <h4 class="w3-text-green fat"><a href="#" target="_blank">Call Flow Scripts</a></h4>
+        </div>
+        <div class="w3-white-box" style="flex: 1 1 0;">
+          <h4 class="w3-text-green fat"><a href="#" target="_blank">Call Flow</a></h4>
+          <h4 class="w3-text-green fat"><a href="#" target="_blank">Call Flow Scripts</a></h4>
+          <h4 class="w3-text-green fat"><a href="#" target="_blank">Call Flow Scripts</a></h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scheduling Rules-->
+    <div class="w3-container" id="scheduling-rules" style="margin-top:60px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>Scheduling Rules</b></h1>
+      <hr style="width:100px;border:5px solid #00c500" class="w3-round shadow">
+      <div class="row" style="display: flex; align-items: stretch; width: 100%; gap: 2rem;">
+        <div class="w3-white-box" style="flex: 1 1 0;">
+          <h2><b>9-Mile Distance</b></h2>
+          <hr style="width:50px;border:3px solid #000000" class="w3-round shadow">
+          <h4>Does the route stay under the duration of 5 hrs for Monday or 6 hrs for other days?</h4>
+          <h4>Does the distance in the bottom left stay under 60 miles?</h4>
+          <h4>Does the route have at least 2 < 9 without any over 9?</h4>
+
+          <h3 class="w3-text-green" style="font-weight: 600;"><b>If yes, you can schedule without permission!</b></h3>
+          <hr style="width:50px;border:3px solid #000000" class="w3-round shadow">
+          <h4>If the route has:</h4>
+          <h4>3 under 9, and</h4>
+          <h4>No more than 3 over 9</h4>
+          <h3><span class="w3-text-green" style="font-weight: 600;">You can ask a supervisor for PTS</span>⁉️</h3>
+          <img src="/assets/PTS.png" alt="PTS Example" class="w3-image" style="width: 30%; height:auto;">
+        </div>
+      </div>
+      <div class="w3-white-box" style="flex: 1 1 0;">
+        <h2><b>🛡️ Core Rules &amp; Guardrails</b></h2>
+        <hr style="width:50px;border:3px solid #000000" class="w3-round shadow">
+        <h4 style="margin-bottom: 0.2em;"><b>📋 Rule Protocol</b></h4>
+        <ul style="font-size:1.05em; padding-left: 1.2em; margin-top: 0.2em;">
+          <li><b>Same-Day Appts:</b> Supervisor, SM, BM, or the SP required; notify SP via Teams</li>
+          <li><b>Next-Day After 1PM:</b> Treat as same-day; needs RC, Field Support, or Field Leader approval</li>
+          <li><b>Weekend Appts (Sat/Sun):</b> <span title="No">&#10060;</span> Not allowed without RC or Field Leader approval</li>
+          <li><b>&gt;2 Weeks Out from Original:</b> <span title="Approval">&#128221;</span> Requires Supervisor/Sen Specialist approval; max 30 days for Loyalty</li>
+          <li><b>Balance Over $70:</b> <span title="No">&#10060;</span> No scheduling allowed</li>
+          <li><b>Appointment Reminder:</b> <span title="Reminder">&#128276;</span> Always send via route after confirming with customer</li>
+        </ul>
+        <h4 style="margin-bottom: 0.2em;"><b>⏱️ Route Duration</b></h4>
+        <table style="width:100%; font-size:1.05em; margin-bottom:10px; margin-top: 0.2em;">
+          <tr><th style="text-align:left;">Condition</th><th style="text-align:left;">Max Hours</th><th style="text-align:left;">Exceptions</th></tr>
+          <tr><td>Regular Days</td><td>6.0 hrs</td><td>Supervisor may approve up to 7 hrs if mileage &le; 60</td></tr>
+          <tr><td>Mondays (Meeting Days)</td><td>5.0 hrs</td><td>No exceptions unless in Branch Notes</td></tr>
+        </table>
+        <ul style="font-size:1em; padding-left: 1.2em;">
+          <li>Check “Hrs” on top-right of SP route</li>
+          <li>&#8594; First number = total active job time</li>
+          <li><span title="Warning">&#9888;&#65039;</span> Never exceed thresholds without documented permission</li>
+        </ul>
+        <h4 style="margin-bottom: 0.2em;"><b>🕑 Timed Appointment Rules</b></h4>
+        <ul style="font-size:1.05em; padding-left: 1.2em; margin-top: 0.2em;">
+          <li><b>Max timed appts per route:</b> Typically 1–3; always check route header</li>
+          <li><b>Must follow 2-hour windows:</b> e.g. 8–10, 9–11, ..., 3–5</li>
+          <li><b>No overlap allowed:</b> <span title="No">&#10060;</span> Must be staggered</li>
+          <li><b>After 4PM (e.g., 3–5, 4–6):</b> <span title="Approval">&#128221;</span> Requires BM, SM, or Route Creation approval</li>
+          <li><b>Multiple appts = same time window:</b> CX preference applies to all appts on route</li>
+          <li><b>Mondays:</b> <span title="Restriction">&#9940;</span> No timed appts before 10AM; only 2 timed per route</li>
+        </ul>
+        <h4 style="margin-bottom: 0.2em;"><b>🧑‍🔧 Service Pro Skills</b></h4>
+        <p style="margin-bottom: 0.2em;">Schedule <b>ONLY</b> if route shows the skill for:</p>
+        <ul style="font-size:1.05em; padding-left: 1.2em; margin-top: 0.2em;">
+          <li>&#128081; VIP Services</li>
+          <li>&#128028; Cockroach Treatments</li>
+          <li>&#128013; Flea Tick Interior Reduction</li>
+          <li>&#128027; Termite Baiting</li>
+          <li>&#128376; Bed Bug</li>
+        </ul>
+        <p style="font-size:1em;">Hover over <img src="/assets/image.webp" alt="S icon" style="height:2.0em; vertical-align:middle; border-radius:50%; border:1px solid #bbb;"> icon to verify<br>Jobs outside this list = free to assign to any SP</p>
+        <h4 style="margin-bottom: 0.2em;"><b>📝 Technician &amp; Branch Notes</b></h4>
+        <ul style="font-size:1.05em; padding-left: 1.2em; margin-top: 0.2em;">
+          <li>Follow local variations based on:</li>
+          <ul>
+            <li>&#128683; “DO NOT ADD” — requires RC, BAM/DAM, SP, or Manager approval</li>
+            <li>&#128682; “RESCHEDULE ROUTE” — do not book on these routes; check with BAM</li>
+            <li>&#128205; “X Jobs Only” — check CX address to confirm zone</li>
+            <li>&#128221; Max timed or total job caps — listed per branch/SP behavior</li>
+            <li>&#9201; Latest appointment time — don’t exceed route-specific limits</li>
+          </ul>
+        </ul>
+        <h4 style="margin-bottom: 0.2em;"><b>⭐ Lead Service Pros (LSPs)</b></h4>
+        <table style="width:100%; font-size:1.05em; margin-bottom:10px; margin-top: 0.2em;">
+          <tr><th style="text-align:left;">Metric</th><th style="text-align:left;">Rule</th></tr>
+          <tr><td>Who Can Schedule</td><td>Inside Sales, Loyalty, Sups, Ticket Responders only</td></tr>
+          <tr><td>Job Types Allowed</td><td>Initials, Reservices, VIP, Save attempts</td></tr>
+          <tr><td>Max Distance</td><td>30 miles</td></tr>
+          <tr><td>Route Duration Limit</td><td>5.5 hours</td></tr>
+          <tr><td>Time Windows</td><td>4-hour blocks</td></tr>
+          <tr><td>Job Limit</td><td>6 total</td></tr>
+        </table>
+        <p style="font-size:1em;">LSP routes found in Lead Pro tab<br>CS team should only schedule with ticket or supervisor directive</p>
+        <h4 style="margin-bottom: 0.2em;"><b>🔒 Locked Routes</b></h4>
+        <ul style="font-size:1.05em; padding-left: 1.2em; margin-top: 0.2em;">
+          <li>Routes may restrict access if:</li>
+          <ul>
+            <li>&#128274; Locked by Manager</li>
+            <li>&#128188; Assigned to restricted Office Staff</li>
+          </ul>
+        </ul>
+        <p style="font-size:1em;">Unlock only with approval from: RC, BAM/DAM, Field Manager, SP themselves<br>Supervisor or Sen Specialist can perform unlock if:<br>&#10148; CX has appointment already — adding on route<br>&#10148; SP calls in to Pro Support on current date<br>&#10148; Future changes approved by branch, RC, or field<br>&#8594; Re-lock the route post-scheduling</p>
+        <h4 style="margin-bottom: 0.2em;"><b>🚫 Empty Routes</b></h4>
+        <ul style="font-size:1.05em; padding-left: 1.2em; margin-top: 0.2em;">
+          <li>Do not book unless:</li>
+          <ul>
+            <li>&#8805;2 appointments on the route</li>
+            <li>All &#8804;9 miles apart</li>
+          </ul>
+          <li>If 1 or fewer appointments: <span title="Approval">&#128221;</span> submit ticket for approval</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tickets-->
+    <div class="w3-container" id="tickets" style="margin-top:60px">
+
+      <h1 class="w3-xxxlarge w3-text-red"><b>Tickets</b></h1>
+      <hr style="width: 100px; border: 5px solid #00c500;" class="w3-round shadow">
+      <div class="row" style="display:flex; align-items:stretch;">
+        <div class="w3-quarter" style="padding:10px; min-width: 300px;">
+        <div class="w3-white-box w3-text-center">
+            <h2><b>Reservices</b></h2>
+            <h3 class="go-reservice"><a href="https://greenix.atlassian.net/servicedesk/customer/portal/31/group/100/create/390" target="_blank">Create Ticket</a></h3>
+            <h3 class="go-reservice"><a href="https://greenix.atlassian.net/servicedesk/customer/user/requests?pIds=31&page=1&reporter=all&rtIds=390&statuses=open&statuses=closed" target="_blank">View Tickets</a></h3>
+            <h3>Reference Lookup</h3>
+            <div class="ref-cell">
+              <span class="ref-label go-reservice">CA -</span>
+              <input type="text" id="caInput" maxlength="5" pattern="\d*"
+                style="width:80px; font-size:1em; margin-left:0;">
+              <button class="go-reservice" onclick="goRequest('caInput','CA-',31)">GO</button>
+            </div>
+          </div>
+        </div>
+        <div class="w3-quarter" style="padding:10px; min-width: 300px;">
+        <div class="w3-white-box w3-text-center">
+            <h2><b>Route ALL</b></h2>
+            <h3 class="go-sched"><a href="https://greenix.atlassian.net/servicedesk/customer/portal/32/group/104/create/399" target="_blank">Create Ticket</a></h3>
+            <h3 class="go-sched"><a href="https://greenix.atlassian.net/servicedesk/customer/user/requests?pIds=32&page=1&reporter=all&rtIds=399&statuses=open&statuses=closed" target="_blank">View Tickets</a></h3>
+            <h3>Reference Lookup</h3>
+            <div class="ref-cell">
+              <span class="ref-label go-sched">SCHED -</span>
+              <input type="text" id="schedInput" maxlength="5" pattern="\d*"
+                style="width:80px; font-size:1em; margin-left:0;">
+              <button class="go-sched" onclick="goRequest('schedInput','SCHED-',32)">GO</button>
+            </div>
+          </div>
+        </div>
+        <div class="w3-quarter" style="padding:10px; min-width: 300px;">
+          <div class="w3-white-box w3-text-center">
+            <h2><b>Route ROVE</b></h2>
+            <h3 class="go-sched"><a href="https://greenix.atlassian.net/servicedesk/customer/portal/32/group/1148/create/1751" target="_blank">Create Ticket</a></h3>
+            <h3 class="go-sched"><a href="https://greenix.atlassian.net/servicedesk/customer/user/requests?pIds=32&page=1&reporter=all&rtIds=1751&statuses=open&statuses=closed" target="_blank">View Tickets</a></h3>
+            <h3>Reference Lookup</h3>
+            <div class="ref-cell">
+              <span class="ref-label go-sched">SCHED -</span>
+              <input type="text" id="schedInput" maxlength="5" pattern="\d*"
+                style="width:80px; font-size:1em; margin-left:0;">
+              <button class="go-sched" onclick="goRequest('schedInput','SCHED-',32)">GO</button>
+            </div>
+          </div>
+        </div>
+        <div class="w3-quarter" style="padding:10px; min-width: 300px;">
+          <div class="w3-white-box w3-text-center" style="background-color: #eaffea !important;">
+            <h2><b>Priority</b></h2>
+            <h3 class="go-fs"><a href="https://greenix.atlassian.net/servicedesk/customer/portal/40/group/113/create/518" target="_blank">Create Ticket</a></h3>
+            <h3 class="go-fs"><a href="https://greenix.atlassian.net/servicedesk/customer/user/requests?pIds=40&page=1&reporter=all&rtIds=518&statuses=open&statuses=closed" target="_blank">View Tickets</a></h3>
+            <h3>Reference Lookup</h3>
+            <div class="ref-cell">
+              <span class="ref-label go-fs">FS -</span>
+              <input type="text" id="fsInput" maxlength="5" pattern="\d*"
+                style="width:80px; font-size:1.em; margin-left:0;">
+              <button class="go-fs" onclick="goRequest('fsInput','FS-',40)">GO</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- End page content -->
+
+  </div>
+
+  <!-- W3.CSS Container -->
+  <div class="w3-dark-grey w3-container" style="margin-top:100px;padding-right:58px">
+    <p class="w3-right">Email Me: <a href="mailto:bvaring@greenixpc.com" target="_blank" class="w3-hover-opacity">Brad
+        Varing @ GreenixPC</a></p>
+  </div>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+  </script>
+  <script>
+    function goRequest(inputId, prefix, portalId) {
+      const val = document.getElementById(inputId).value.trim();
+      if (!/^\d{5}$/.test(val)) {
+        alert("Please enter a valid 5-digit number.");
+        return;
+      }
+      const url = `https://greenix.atlassian.net/servicedesk/customer/portal/${portalId}/${prefix}${val}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+
+</html>
