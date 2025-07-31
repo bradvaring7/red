@@ -55,20 +55,20 @@
       <h1 class="w3-xxxlarge w3-text-red"><b>Call Flow</b></h1>
       <hr style="width: 100px; border: 5px solid #00c500;" class="w3-round shadow">
 
-      <div class="row" style="display: flex; align-items: stretch; width: 100%; gap: 2rem;">
-        <div class="w3-white-box" style="flex: 1 1 0;">
+      <div class="row" style="display: flex; flex-wrap: wrap; gap: 2rem;">
+        <div class="w3-white-box" style="flex: 1 1 300px; min-width:220px; max-width:33%;">
           <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EVtt1MKvXvdEkIW-yZR6c_cBovfDJTwnFgcRK3Lue3LEGw?e=9DoLm9" target="_blank">Call Flow</a></h4>
           <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EbQpSgUlSk1Jk4X1-h7pnTcBIagitSU9RzrPm7Q2zYAVUQ?e=bPogCs" target="_blank">Call Flow Scripts</a></h4>
           <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EbgkRyHAHcJNlcvWPOjPHwMBFao7IgjiLv5mJxm4iUc3BA?e=yc0kQI" target="_blank">Tier 1 Offers</a></h4>
           <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/Ec8qIypOSNpPrZIEt6ALIFkBbbHByv0mrB4UOg0Z22_dfw?e=RnE2xc" target="_blank">Tier 2 Offers</a></h4>
         </div>
-        <div class="w3-white-box" style="flex: 1 1 0;">
+        <div class="w3-white-box" style="flex: 1 1 300px; min-width:220px; max-width:33%;">
           <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EWrRIH2QyKpEnpy0_1qCWPIBj5iV0cmlewv4NUbzsReMhQ?e=eO3OhB" target="_blank">Incoming Call Colors</a></h4>
           <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EYT7pCoiTLFGsN2SGiO84hABa4qSABYTxRVfELu3wvgStQ?e=cZgtS3" target="_blank">Diagnostic Questions</a></h4>
           <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EatQmZrhV89NjwLn-Nx9648Bq3w8VEpRq2_y4et41gR5Bw?e=vYvgpB" target="_blank">Discovery</a></h4>
           <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EWfuVXwmELJPuVDdRZ-rfiUBQgbD_9LVuW4iRXBrd55ZNA?e=dI9m84" target="_blank">Triple A</a></h4>
         </div>
-        <div class="w3-white-box" style="flex: 1 1 0;">
+        <div class="w3-white-box" style="flex: 1 1 300px; min-width:220px; max-width:33%;">
           <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EeFFMlC5X1xNhXJ8lMR9N3MBm8B20FMN8uK4Q0XI07ZMUQ?e=scl7DQ" target="_blank">Building Value Scripts</a></h4>
           <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EdQB1agPVadNk1d1sU15RnwB0MOO7et6-sMADGVgdLADgQ?e=4dWcme" target="_blank">Building Value Reservices</a></h4>
           <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EWt6hxSGI6NMtm9zPSTWDSUBZdU4jC7oP2lRtDB4ORq4mg?e=Fptdl2" target="_blank">Building Value TFM</a></h4>
@@ -377,6 +377,14 @@
       window.open(url, '_blank');
     }
   </script>
+  <style>
+    @media (max-width: 900px) {
+      .row .w3-white-box {
+        max-width: 100% !important;
+        flex-basis: 100% !important;
+      }
+    }
+  </style>
 </body>
 
 </html>
