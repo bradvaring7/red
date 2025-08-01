@@ -2,39 +2,81 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
   <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Poppins", sans-serif
+    }
+
+    .w3-half img {
+      margin-bottom: -6px;
+      margin-top: 16px;
+      opacity: 0.8;
+      cursor: pointer
+    }
+
+    .w3-half img:hover {
+      opacity: 1
+    }
+
+    /* Button press effect */
+    .w3-button:active {
+      transform: translateY(2px) scale(0.98);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) inset;
+    }
+
+    /* Responsive stacking for Quick Sheets buttons */
+    @media (max-width: 900px) {
+      .w3-row-padding .w3-quarter {
+        width: 50% !important;
+        display: block;
+        float: left;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .w3-row-padding .w3-quarter {
+        width: 100% !important;
+        display: block;
+        float: none;
+      }
+    }
+  </style>
 </head>
 
-<body>
+<body class="w3-sand">
 
   <!-- Sidebar/menu -->
-  <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"
-    id="mySidebar"><br>
+  <nav class="w3-sidebar w3-darker-hex w3-collapse w3-top w3-large w3-padding shadower"
+    style="z-index:3;width:300px;font-weight:400;" id="mySidebar"><br>
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
       style="width:100%;font-size:22px">Close Menu</a>
-    <div class="w3-container w3-padding-32">
-      <img src="assets/Picture2.png" alt="Greenix logo" style="max-width: 70%;">
+    <div class="w3-container">
+      <h3 class="w3-padding-64"><b>Brad<br>Varing</b></h3>
     </div>
     <div class="w3-bar-block">
       <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
       <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Customer Service</a>
-      <a href="services.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a>
-      <a href="pros.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Service Pros</a>
-      <a href="general.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">General Info</a>
-      <a href="forms.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Forms</a>
-      <a href="http://greenixpc.com" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" target="_blank"
-        rel="noopener">Greenixpc.com</a>
+      <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a>
+      <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Designers</a>
+      <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a>
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
     </div>
   </nav>
 
   <!-- Top menu on small screens -->
-  <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
-    <span>Menu</span>
+  <header class="w3-container w3-top w3-hide-large w3-dark-hex w3-xlarge w3-padding shadower">
+    <a href="javascript:void(0)" class="w3-button w3-green w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Brad Varing</span>
   </header>
 
   <!-- Overlay effect when opening sidebar on small screens -->
@@ -42,308 +84,213 @@
     id="myOverlay"></div>
 
   <!-- !PAGE CONTENT! -->
-  <div class="w3-main" style="margin-left:340px;margin-right:40px;">
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
     <!-- Header -->
     <div class="w3-container" style="margin-top:80px" id="showcase">
-      <h1 class="w3-jumbo"><b>Customer Service</b></h1>
+      <h1 class="w3-jumbo w3-text-green text-shadow"><b>Customer Service</b></h1>
+      <h1 class="w3-xxxlarge w3-text-khaki text-shadow"><b>Quick Sheets</b></h1>
+      <hr style="width:50px;border:5px solid #00e300" class="w3-round shadow">
     </div>
 
-    <!-- Call Flow -->
-
-    <div class="w3-container" id="callflow" style="margin-top:20px">
-      <h1 class="w3-xxxlarge w3-text-red"><b>Call Flow</b></h1>
-      <hr style="width: 100px; border: 5px solid #00c500;" class="w3-round shadow">
-
-      <div class="row" style="display: flex; flex-wrap: wrap; gap: 2rem;">
-        <div class="w3-white-box" style="flex: 1 1 300px; min-width:220px; max-width:33%;">
-          <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EVtt1MKvXvdEkIW-yZR6c_cBovfDJTwnFgcRK3Lue3LEGw?e=9DoLm9" target="_blank">Call Flow</a></h4>
-          <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EbQpSgUlSk1Jk4X1-h7pnTcBIagitSU9RzrPm7Q2zYAVUQ?e=bPogCs" target="_blank">Call Flow Scripts</a></h4>
-          <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EbgkRyHAHcJNlcvWPOjPHwMBFao7IgjiLv5mJxm4iUc3BA?e=yc0kQI" target="_blank">Tier 1 Offers</a></h4>
-          <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/Ec8qIypOSNpPrZIEt6ALIFkBbbHByv0mrB4UOg0Z22_dfw?e=RnE2xc" target="_blank">Tier 2 Offers</a></h4>
-        </div>
-        <div class="w3-white-box" style="flex: 1 1 300px; min-width:220px; max-width:33%;">
-          <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EWrRIH2QyKpEnpy0_1qCWPIBj5iV0cmlewv4NUbzsReMhQ?e=eO3OhB" target="_blank">Incoming Call Colors</a></h4>
-          <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EYT7pCoiTLFGsN2SGiO84hABa4qSABYTxRVfELu3wvgStQ?e=cZgtS3" target="_blank">Diagnostic Questions</a></h4>
-          <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EatQmZrhV89NjwLn-Nx9648Bq3w8VEpRq2_y4et41gR5Bw?e=vYvgpB" target="_blank">Discovery</a></h4>
-          <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EWfuVXwmELJPuVDdRZ-rfiUBQgbD_9LVuW4iRXBrd55ZNA?e=dI9m84" target="_blank">Triple A</a></h4>
-        </div>
-        <div class="w3-white-box" style="flex: 1 1 300px; min-width:220px; max-width:33%;">
-          <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EeFFMlC5X1xNhXJ8lMR9N3MBm8B20FMN8uK4Q0XI07ZMUQ?e=scl7DQ" target="_blank">Building Value Scripts</a></h4>
-          <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EdQB1agPVadNk1d1sU15RnwB0MOO7et6-sMADGVgdLADgQ?e=4dWcme" target="_blank">Building Value Reservices</a></h4>
-          <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EWt6hxSGI6NMtm9zPSTWDSUBZdU4jC7oP2lRtDB4ORq4mg?e=Fptdl2" target="_blank">Building Value TFM</a></h4>
-          <h4 class="w3-text-green fat"><a href="https://greenixpc0-my.sharepoint.com/:b:/g/personal/bvaring_greenixpc_com/EX4X5knWb0lCsoA44R66JGwB2BeGJYUXgP14l5VBktFy1A?e=Cn8uyE" target="_blank">Call Metrics</a></h4>
-        </div>
+    <!-- Quick Sheets (modals) -->
+    <div class="w3-row-padding">
+      <div class="w3-quarter w3-center">
+        <button onclick="openIframeModal('qs/call-transfers.htm')" type="button"
+          class="w3-button w3-green w3-round-large shadower w3-margin-top">
+          Call Transfers
+        </button>
+      </div>
+      <div class="w3-quarter w3-center">
+        <button onclick="openIframeModal('qs/call-transfers.htm')" type="button"
+          class="w3-button w3-green w3-round-large shadower w3-margin-top">
+          Call Transfers
+        </button>
+      </div>
+      <div class="w3-quarter w3-center">
+        <button onclick="openIframeModal('qs/call-transfers.htm')" type="button"
+          class="w3-button w3-green w3-round-large shadower w3-margin-top">
+          Call Transfers
+        </button>
+      </div>
+      <div class="w3-quarter w3-center">
+        <button onclick="openIframeModal('qs/call-transfers.htm')" type="button"
+          class="w3-button w3-green w3-round-large shadower w3-margin-top">
+          Call Transfers
+        </button>
       </div>
     </div>
 
-    <!-- Cancel Requests-->
-    <div class="w3-container" id="scheduling" style="margin-top:60px">
-      <h1 class="w3-xxxlarge w3-text-red"><b>Cancel Requests</b></h1>
-      <hr style="width:100px;border:5px solid #00c500" class="w3-round shadow">
-      <div class="row" style="display: flex; align-items: stretch; width: 100%; gap: 2rem;">
-        <div class="w3-white-box" style="width:100%; flex: 1 1 100%;">
-          <table class="w3-table w3-bordered w3-small loyalty-transfer-box" style="width:100%; background: #f9f9f9; margin-bottom: 1em;">
-            <tr style="background:#e0f7fa; font-weight:bold;">
-              <td colspan="2" style="text-align:center; font-size:1.1em;">LOYALTY TRANSFER</td>
-            </tr>
-            <tr>
-              <td style="font-weight:bold; width:50%;">When to Transfer</td>
-              <td style="font-weight:bold; width:50%;">What to Say</td>
-            </tr>
-            <tr>
-              <td>Customer requests to cancel</td>
-              <td>"I can help you with that! Let me get you to our Loyalty Team who specializes in cancellations and can help you further."</td>
-            </tr>
-            <tr>
-              <td>Customer is upset about price</td>
-              <td>"Our Loyalty Team has access to special offers and solutions. Let me connect you with them!"</td>
-            </tr>
-            <tr>
-              <td>Customer requests to pause service</td>
-              <td>"Our Loyalty Team can review your account and discuss options for pausing your service. I'll transfer you now."</td>
-            </tr>
-            <tr>
-              <td>Customer requests to remove a service</td>
-              <td>"Let me get you to our Loyalty Team who can help with changes to your services."</td>
-            </tr>
-            <tr>
-              <td>Customer requests to change frequency </td>
-              <td>"Our Loyalty Team can help with adjusting your service frequency. I'll transfer you now."</td>
-            </tr>
-            <tr>
-              <td>Customer requests to change price</td>
-              <td>"Our Loyalty Team can review your account for any available discounts or adjustments. Let me connect you with them!"</td>
-            </tr>
-            <tr>
-              <td>Customer requests to change plan</td>
-              <td>"Our Loyalty Team can help you explore other plan options. I'll transfer you now."</td>
-            </tr>
-            <tr>
-              <td>Customer requests to change payment date</td>
-              <td>"Our Loyalty Team can help with payment date changes. Let me connect you with them!"</td>
-            </tr>
-            <tr>
-              <td>Customer requests to change payment method</td>
-              <td>"Our Loyalty Team can help update your payment method. I'll transfer you now."</td>
-            </tr>
-            <tr>
-              <td>Customer requests to update contact info</td>
-              <td>"Our Loyalty Team can help update your contact information. Let me connect you with them!"</td>
-            </tr>
-          </table>
-        </div>
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal" style="padding-top:0" onclick="this.style.display='none'">
+      <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption"></p>
       </div>
     </div>
 
-    <!-- Transfers and Tiers-->
-    <div class="w3-container" id="transfers" style="margin-top:60px">
-
-      <h1 class="w3-xxxlarge w3-text-red"><b>Tiers & Transfers</b></h1>
-      <hr style="width: 100px; border: 5px solid #00c500;" class="w3-round shadow">
-
-      <div class="row" style="display: flex; align-items: stretch; width: 100%; gap: 2rem;">
-        <div class="w3-white-box" style="flex: 1 1 0;">
-          <h4 class="w3-text-green fat"><a href="#" target="_blank">Call Flow</a></h4>
-          <h4 class="w3-text-green fat"><a href="#" target="_blank">Call Flow Scripts</a></h4>
-          <h4 class="w3-text-green fat"><a href="#" target="_blank">Call Flow Scripts</a></h4>
-          <h4 class="w3-text-green fat"><a href="#" target="_blank">Call Flow Scripts</a></h4>
-        </div>
-        <div class="w3-white-box" style="flex: 1 1 0;">
-          <h4 class="w3-text-green fat"><a href="#" target="_blank">Call Flow</a></h4>
-          <h4 class="w3-text-green fat"><a href="#" target="_blank">Call Flow Scripts</a></h4>
-          <h4 class="w3-text-green fat"><a href="#" target="_blank">Call Flow Scripts</a></h4>
-          <h4 class="w3-text-green fat"><a href="#" target="_blank">Call Flow Scripts</a></h4>
-        </div>
-        <div class="w3-white-box" style="flex: 1 1 0;">
-          <h4 class="w3-text-green fat"><a href="#" target="_blank">Call Flow</a></h4>
-          <h4 class="w3-text-green fat"><a href="#" target="_blank">Call Flow Scripts</a></h4>
-          <h4 class="w3-text-green fat"><a href="#" target="_blank">Call Flow Scripts</a></h4>
-        </div>
-      </div>
+    <!-- Services -->
+    <div class="w3-container" style="margin-top:80px" id="services">
+      <h1 class="w3-xxxlarge w3-text-khaki text-shadow"><b>Services</b></h1>
+      <hr style="width:75px;border:6px solid #00e300" class="w3-round shadow">
+      <p style="text-shadow">We are a interior design service that focus on what's best for your home and what's best
+        for you!</p>
+      <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+        elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat.
+      </p>
     </div>
 
-    <!-- Scheduling Rules-->
-    <div class="w3-container" id="scheduling-rules" style="margin-top:60px">
-      <h1 class="w3-xxxlarge w3-text-red"><b>Scheduling Rules</b></h1>
-      <hr style="width:100px;border:5px solid #00c500" class="w3-round shadow">
-      <div class="row" style="display: flex; align-items: stretch; width: 100%; gap: 2rem;">
-        <div class="w3-white-box" style="flex: 1 1 0;">
-          <h2><b>9-Mile Distance</b></h2>
-          <hr style="width:50px;border:3px solid #000000" class="w3-round shadow">
-          <h4>Does the route stay under the duration of 5 hrs for Monday or 6 hrs for other days?</h4>
-          <h4>Does the distance in the bottom left stay under 60 miles?</h4>
-          <h4>Does the route have at least 2 < 9 without any over 9?</h4>
-
-          <h3 class="w3-text-green" style="font-weight: 600;"><b>If yes, you can schedule without permission!</b></h3>
-          <hr style="width:50px;border:3px solid #000000" class="w3-round shadow">
-          <h4>If the route has:</h4>
-          <h4>3 under 9, and</h4>
-          <h4>No more than 3 over 9</h4>
-          <h3><span class="w3-text-green" style="font-weight: 600;">You can ask a supervisor for PTS</span>⁉️</h3>
-          <img src="assets/PTS.png" alt="PTS Example" class="w3-image" style="width: 30%; height:auto;">
-        </div>
-      </div>
-      <div class="w3-white-box" style="flex: 1 1 0;">
-        <h2><b>🛡️ Core Rules &amp; Guardrails</b></h2>
-        <hr style="width:50px;border:3px solid #000000" class="w3-round shadow">
-        <h4 style="margin-bottom: 0.2em;"><b>📋 Rule Protocol</b></h4>
-        <ul style="font-size:1.05em; padding-left: 1.2em; margin-top: 0.2em;">
-          <li><b>Same-Day Appts:</b> Supervisor, SM, BM, or the SP required; notify SP via Teams</li>
-          <li><b>Next-Day After 1PM:</b> Treat as same-day; needs RC, Field Support, or Field Leader approval</li>
-          <li><b>Weekend Appts (Sat/Sun):</b> <span title="No">&#10060;</span> Not allowed without RC or Field Leader approval</li>
-          <li><b>&gt;2 Weeks Out from Original:</b> <span title="Approval">&#128221;</span> Requires Supervisor/Sen Specialist approval; max 30 days for Loyalty</li>
-          <li><b>Balance Over $70:</b> <span title="No">&#10060;</span> No scheduling allowed</li>
-          <li><b>Appointment Reminder:</b> <span title="Reminder">&#128276;</span> Always send via route after confirming with customer</li>
-        </ul>
-        <h4 style="margin-bottom: 0.2em;"><b>⏱️ Route Duration</b></h4>
-        <table style="width:100%; font-size:1.05em; margin-bottom:10px; margin-top: 0.2em;">
-          <tr><th style="text-align:left;">Condition</th><th style="text-align:left;">Max Hours</th><th style="text-align:left;">Exceptions</th></tr>
-          <tr><td>Regular Days</td><td>6.0 hrs</td><td>Supervisor may approve up to 7 hrs if mileage &le; 60</td></tr>
-          <tr><td>Mondays (Meeting Days)</td><td>5.0 hrs</td><td>No exceptions unless in Branch Notes</td></tr>
-        </table>
-        <ul style="font-size:1em; padding-left: 1.2em;">
-          <li>Check “Hrs” on top-right of SP route</li>
-          <li>&#8594; First number = total active job time</li>
-          <li><span title="Warning">&#9888;&#65039;</span> Never exceed thresholds without documented permission</li>
-        </ul>
-        <h4 style="margin-bottom: 0.2em;"><b>🕑 Timed Appointment Rules</b></h4>
-        <ul style="font-size:1.05em; padding-left: 1.2em; margin-top: 0.2em;">
-          <li><b>Max timed appts per route:</b> Typically 1–3; always check route header</li>
-          <li><b>Must follow 2-hour windows:</b> e.g. 8–10, 9–11, ..., 3–5</li>
-          <li><b>No overlap allowed:</b> <span title="No">&#10060;</span> Must be staggered</li>
-          <li><b>After 4PM (e.g., 3–5, 4–6):</b> <span title="Approval">&#128221;</span> Requires BM, SM, or Route Creation approval</li>
-          <li><b>Multiple appts = same time window:</b> CX preference applies to all appts on route</li>
-          <li><b>Mondays:</b> <span title="Restriction">&#9940;</span> No timed appts before 10AM; only 2 timed per route</li>
-        </ul>
-        <h4 style="margin-bottom: 0.2em;"><b>🧑‍🔧 Service Pro Skills</b></h4>
-        <p style="margin-bottom: 0.2em;">Schedule <b>ONLY</b> if route shows the skill for:</p>
-        <ul style="font-size:1.05em; padding-left: 1.2em; margin-top: 0.2em;">
-          <li>&#128081; VIP Services</li>
-          <li>&#128028; Cockroach Treatments</li>
-          <li>&#128013; Flea Tick Interior Reduction</li>
-          <li>&#128027; Termite Baiting</li>
-          <li>&#128376; Bed Bug</li>
-        </ul>
-        <p style="font-size:1em;">Hover over <img src="assets/image.webp" alt="S icon" style="height:2.0em; vertical-align:middle; border-radius:50%; border:1px solid #bbb;"> icon to verify<br>Jobs outside this list = free to assign to any SP</p>
-        <h4 style="margin-bottom: 0.2em;"><b>📝 Technician &amp; Branch Notes</b></h4>
-        <ul style="font-size:1.05em; padding-left: 1.2em; margin-top: 0.2em;">
-          <li>Follow local variations based on:</li>
-          <ul>
-            <li>&#128683; “DO NOT ADD” — requires RC, BAM/DAM, SP, or Manager approval</li>
-            <li>&#128682; “RESCHEDULE ROUTE” — do not book on these routes; check with BAM</li>
-            <li>&#128205; “X Jobs Only” — check CX address to confirm zone</li>
-            <li>&#128221; Max timed or total job caps — listed per branch/SP behavior</li>
-            <li>&#9201; Latest appointment time — don’t exceed route-specific limits</li>
-          </ul>
-        </ul>
-        <h4 style="margin-bottom: 0.2em;"><b>⭐ Lead Service Pros (LSPs)</b></h4>
-        <table style="width:100%; font-size:1.05em; margin-bottom:10px; margin-top: 0.2em;">
-          <tr><th style="text-align:left;">Metric</th><th style="text-align:left;">Rule</th></tr>
-          <tr><td>Who Can Schedule</td><td>Inside Sales, Loyalty, Sups, Ticket Responders only</td></tr>
-          <tr><td>Job Types Allowed</td><td>Initials, Reservices, VIP, Save attempts</td></tr>
-          <tr><td>Max Distance</td><td>30 miles</td></tr>
-          <tr><td>Route Duration Limit</td><td>5.5 hours</td></tr>
-          <tr><td>Time Windows</td><td>4-hour blocks</td></tr>
-          <tr><td>Job Limit</td><td>6 total</td></tr>
-        </table>
-        <p style="font-size:1em;">LSP routes found in Lead Pro tab<br>CS team should only schedule with ticket or supervisor directive</p>
-        <h4 style="margin-bottom: 0.2em;"><b>🔒 Locked Routes</b></h4>
-        <ul style="font-size:1.05em; padding-left: 1.2em; margin-top: 0.2em;">
-          <li>Routes may restrict access if:</li>
-          <ul>
-            <li>&#128274; Locked by Manager</li>
-            <li>&#128188; Assigned to restricted Office Staff</li>
-          </ul>
-        </ul>
-        <p style="font-size:1em;">Unlock only with approval from: RC, BAM/DAM, Field Manager, SP themselves<br>Supervisor or Sen Specialist can perform unlock if:<br>&#10148; CX has appointment already — adding on route<br>&#10148; SP calls in to Pro Support on current date<br>&#10148; Future changes approved by branch, RC, or field<br>&#8594; Re-lock the route post-scheduling</p>
-        <h4 style="margin-bottom: 0.2em;"><b>🚫 Empty Routes</b></h4>
-        <ul style="font-size:1.05em; padding-left: 1.2em; margin-top: 0.2em;">
-          <li>Do not book unless:</li>
-          <ul>
-            <li>&#8805;2 appointments on the route</li>
-            <li>All &#8804;9 miles apart</li>
-          </ul>
-          <li>If 1 or fewer appointments: <span title="Approval">&#128221;</span> submit ticket for approval</li>
-        </ul>
-      </div>
+    <!-- Designers -->
+    <div class="w3-container" id="designers" style="margin-top:80px">
+      <h1 class="w3-xxxlarge w3-text-khaki"><b>Designers.</b></h1>
+      <hr style="width:75px;border:6px solid #00e300" class="w3-round shadow">
+      <p>The best team 75 the world.</p>
+      <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+        elit, sed do eiusmod tempor
+        incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <p><b>Our designers are thoughtfully chosen</b>:</p>
     </div>
 
-    <!-- Tickets-->
-    <div class="w3-container" id="tickets" style="margin-top:60px">
-
-      <h1 class="w3-xxxlarge w3-text-red"><b>Tickets</b></h1>
-      <hr style="width: 100px; border: 5px solid #00c500;" class="w3-round shadow">
-      <div class="row" style="display:flex; align-items:stretch;">
-        <div class="w3-quarter" style="padding:10px; min-width: 300px;">
-        <div class="w3-white-box w3-text-center">
-            <h2><b>Reservices</b></h2>
-            <h3 class="go-reservice"><a href="https://greenix.atlassian.net/servicedesk/customer/portal/31/group/100/create/390" target="_blank">Create Ticket</a></h3>
-            <h3 class="go-reservice"><a href="https://greenix.atlassian.net/servicedesk/customer/user/requests?pIds=31&page=1&reporter=all&rtIds=390&statuses=open&statuses=closed" target="_blank">View Tickets</a></h3>
-            <h3>Reference Lookup</h3>
-            <div class="ref-cell">
-              <span class="ref-label go-reservice">CA -</span>
-              <input type="text" id="caInput" maxlength="5" pattern="\d*"
-                style="width:80px; font-size:1em; margin-left:0;">
-              <button class="go-reservice" onclick="goRequest('caInput','CA-',31)">GO</button>
-            </div>
-          </div>
-        </div>
-        <div class="w3-quarter" style="padding:10px; min-width: 300px;">
-        <div class="w3-white-box w3-text-center">
-            <h2><b>Route ALL</b></h2>
-            <h3 class="go-sched"><a href="https://greenix.atlassian.net/servicedesk/customer/portal/32/group/104/create/399" target="_blank">Create Ticket</a></h3>
-            <h3 class="go-sched"><a href="https://greenix.atlassian.net/servicedesk/customer/user/requests?pIds=32&page=1&reporter=all&rtIds=399&statuses=open&statuses=closed" target="_blank">View Tickets</a></h3>
-            <h3>Reference Lookup</h3>
-            <div class="ref-cell">
-              <span class="ref-label go-sched">SCHED -</span>
-              <input type="text" id="schedInput" maxlength="5" pattern="\d*"
-                style="width:80px; font-size:1em; margin-left:0;">
-              <button class="go-sched" onclick="goRequest('schedInput','SCHED-',32)">GO</button>
-            </div>
-          </div>
-        </div>
-        <div class="w3-quarter" style="padding:10px; min-width: 300px;">
-          <div class="w3-white-box w3-text-center">
-            <h2><b>Route ROVE</b></h2>
-            <h3 class="go-sched"><a href="https://greenix.atlassian.net/servicedesk/customer/portal/32/group/1148/create/1751" target="_blank">Create Ticket</a></h3>
-            <h3 class="go-sched"><a href="https://greenix.atlassian.net/servicedesk/customer/user/requests?pIds=32&page=1&reporter=all&rtIds=1751&statuses=open&statuses=closed" target="_blank">View Tickets</a></h3>
-            <h3>Reference Lookup</h3>
-            <div class="ref-cell">
-              <span class="ref-label go-sched">SCHED -</span>
-              <input type="text" id="schedInput" maxlength="5" pattern="\d*"
-                style="width:80px; font-size:1em; margin-left:0;">
-              <button class="go-sched" onclick="goRequest('schedInput','SCHED-',32)">GO</button>
-            </div>
-          </div>
-        </div>
-        <div class="w3-quarter" style="padding:10px; min-width: 300px;">
-          <div class="w3-white-box w3-text-center" style="background-color: #eaffea !important;">
-            <h2><b>Priority</b></h2>
-            <h3 class="go-fs"><a href="https://greenix.atlassian.net/servicedesk/customer/portal/40/group/113/create/518" target="_blank">Create Ticket</a></h3>
-            <h3 class="go-fs"><a href="https://greenix.atlassian.net/servicedesk/customer/user/requests?pIds=40&page=1&reporter=all&rtIds=518&statuses=open&statuses=closed" target="_blank">View Tickets</a></h3>
-            <h3>Reference Lookup</h3>
-            <div class="ref-cell">
-              <span class="ref-label go-fs">FS -</span>
-              <input type="text" id="fsInput" maxlength="5" pattern="\d*"
-                style="width:80px; font-size:1.em; margin-left:0;">
-              <button class="go-fs" onclick="goRequest('fsInput','FS-',40)">GO</button>
-            </div>
+    <!-- The Team -->
+    <div class="w3-row-padding">
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-khaki w3-round-large w3-padding-a10">
+          <div class="w3-container">
+            <h3 class="w3-text-black w3-xxxlarge w3-center text-shadow w3-padding-0">John Doe</h3>
+            <h4 class="w3-text-hex text-shadow w3-xxlarge w3-center w3-padding-0"><b>CEO & Founder</b></b></h4>
+            <p class="w3-center">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+              elementum.</p>
           </div>
         </div>
       </div>
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-khaki w3-round-large w3-padding-a10">
+          <div class="w3-container">
+            <h3 class="w3-text-black w3-xxxlarge w3-center text-shadow w3-padding-0">John Doe</h3>
+            <h4 class="w3-text-hex text-shadow w3-xxlarge w3-center w3-padding-0"><b>CEO & Founder</b></b></h4>
+            <p class="w3-center">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+              elementum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-khaki w3-round-large w3-padding-a10">
+          <div class="w3-container">
+            <h3 class="w3-text-black w3-xxxlarge w3-center text-shadow w3-padding-0">John Doe</h3>
+            <h4 class="w3-text-hex text-shadow w3-xxlarge w3-center w3-padding-0"><b>CEO & Founder</b></b></h4>
+            <p class="w3-center">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+              elementum.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
 
+    <!-- Packages / Pricing Tables -->
+    <div class="w3-container" id="packages" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-green"><b>Packages.</b></h1>
+      <hr style="width:65px;border:6px solid #00c500" class="w3-round-medium shadower">
+      <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure</p>
+    </div>
 
+    <div class="w3-row-padding">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class="w3-darker-hex w3-xxlarge w3-padding-16"><b>Basic</b></li>
+          <li class="w3-padding-16">Floorplanning</li>
+          <li class="w3-padding-16">10 hours support</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">20% furniture discount</li>
+          <li class="w3-padding-16">Good deals</li>
+          <li class="w3-padding-16">
+            <h2>$ 199</h2>
+            <span class="w3-opacity">per room</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
 
+      <div class="w3-half shadower">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class="w3-green w3-xxlarge w3-padding-16 "><b>Pro</b></li>
+          <li class="w3-padding-16">Floorplanning</li>
+          <li class="w3-padding-16">50 hours support</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">50% furniture discount</li>
+          <li class="w3-padding-16">GREAT deals</li>
+          <li class="w3-padding-16">
+            <h2>$ 249</h2>
+            <span class="w3-opacity">per room</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-green w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="w3-container" id="contact" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-green"><b>Contact.</b></h1>
+      <hr style="width:65px;border:6px solid #00c500" class="w3-round-medium shadower">
+      <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new
+        people!</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input w3-border w3-round-medium" type="text" name="Name" required>
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border w3-round-medium" type="text" name="Email" required>
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input w3-border w3-round-medium" type="text" name="Message" required>
+        </div>
+        <button type="submit" class="w3-button w3-round-medium w3-block w3-padding-large w3-green w3-margin-bottom">Send
+          Message</button>
+      </form>
+    </div>
+    <!-- Modal for displaying an HTML file -->
+    <div id="iframeModal" class="w3-modal"
+      style="padding:0; background:rgba(0,0,0,0.92); position:fixed; top:0; left:0; width:100vw; height:100vh; margin:0; border:none;"
+      onclick="this.style.display='none'">
+      <div class="w3-modal-content w3-animate-zoom"
+        style="width:100vw; height:100vh; max-width:100vw; max-height:100vh; margin:0; border:none; border-radius:0; box-shadow:none; background:transparent; overflow:hidden; position:relative;">
+        <span class="w3-button w3-black w3-xxlarge w3-display-topright"
+          onclick="document.getElementById('iframeModal').style.display='none';event.stopPropagation();"
+          style="z-index:2; position:absolute; right:0; top:0;">&times;</span>
+        <iframe id="modalIframe"
+          src=""
+          style="width:100vw; height:100vh; border:none; display:block; margin:0; padding:0; background:transparent;"
+          title="Quick Sheet Modal"></iframe>
+      </div>
+    </div>
     <!-- End page content -->
 
   </div>
 
   <!-- W3.CSS Container -->
-  <div class="w3-dark-grey w3-container" style="margin-top:100px;padding-right:58px">
-    <p class="w3-right">Email Me: <a href="mailto:bvaring@greenixpc.com" target="_blank" class="w3-hover-opacity">Brad
-        Varing @ GreenixPC</a></p>
+  <div class="w3-dark-green w3-container w3-padding-16" style="margin-top:75px;padding-right:58px">
+    <p class="w3-right"><a href="sip:bvaring@greenixpc.com" title="W3.CSS" target="_blank" class="w3-hover-opacity"
+        style="text-decoration: none;">@Brad Adams</a></p>
   </div>
 
   <script>
@@ -363,28 +310,19 @@
       document.getElementById("img01").src = element.src;
       document.getElementById("modal01").style.display = "block";
       var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
+      // Use data-caption if present, else fallback to alt
+      captionText.innerHTML = element.getAttribute('data-caption') || element.alt;
     }
   </script>
   <script>
-    function goRequest(inputId, prefix, portalId) {
-      const val = document.getElementById(inputId).value.trim();
-      if (!/^\d{5}$/.test(val)) {
-        alert("Please enter a valid 5-digit number.");
-        return;
-      }
-      const url = `https://greenix.atlassian.net/servicedesk/customer/portal/${portalId}/${prefix}${val}`;
-      window.open(url, '_blank');
+    function openIframeModal(file) {
+      var modal = document.getElementById('iframeModal');
+      var iframe = document.getElementById('modalIframe');
+      iframe.src = file;
+      modal.style.display = 'block';
     }
   </script>
-  <style>
-    @media (max-width: 900px) {
-      .row .w3-white-box {
-        max-width: 100% !important;
-        flex-basis: 100% !important;
-      }
-    }
-  </style>
+
 </body>
 
 </html>
