@@ -16,24 +16,15 @@
     h5 {
       font-family: "Poppins", sans-serif
     }
-
     .w3-half img {
       margin-bottom: -6px;
       margin-top: 16px;
       opacity: 0.8;
       cursor: pointer
     }
-
     .w3-half img:hover {
       opacity: 1
     }
-
-    /* Button press effect */
-    .w3-button:active {
-      transform: translateY(2px) scale(0.98);
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) inset;
-    }
-
     /* Responsive stacking for Quick Sheets buttons */
     @media (max-width: 900px) {
       .w3-row-padding .w3-quarter {
@@ -42,7 +33,6 @@
         float: left;
       }
     }
-
     @media (max-width: 600px) {
       .w3-row-padding .w3-quarter {
         width: 100% !important;
@@ -50,26 +40,43 @@
         float: none;
       }
     }
+    @media screen and (max-width: 1000px) {
+      .w3-third {
+        width: 100% !important;
+        float: none !important;
+      }
+    }
+    .w3-row-padding {
+      display: flex !important;
+      flex-wrap: wrap !important;
+    }
+    .w3-row-padding>div {
+      display: flex !important;
+      flex-direction: column !important;
+    }
+    .w3-row-padding>div>div {
+      flex: 1 !important;
+      display: flex !important;
+      flex-direction: column !important;
+    }
   </style>
 </head>
 
-<body class="w3-sand">
+<body class="w3-dark-hex">
 
   <!-- Sidebar/menu -->
-  <nav class="w3-sidebar w3-darker-hex w3-collapse w3-top w3-large w3-padding shadower"
+  <nav class="w3-sidebar w3-darkest-hex w3-collapse w3-top w3-large w3-padding shadower"
     style="z-index:3;width:300px;font-weight:400;" id="mySidebar"><br>
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
       style="width:100%;font-size:22px">Close Menu</a>
     <div class="w3-container">
-      <h3 class="w3-padding-64"><b>Brad<br>Varing</b></h3>
+      <h3 class="w3-padding-64"><b class="text-shadow w3-xxlarge">Brad Varing</b><br>CS SP T2</h3>
     </div>
-    <div class="w3-bar-block">
-      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
-      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Customer Service</a>
-      <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a>
-      <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Designers</a>
-      <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a>
-      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+    <div class="w3-bar-block text-shadow w3-xlarge">
+      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-text-white">Home</a>
+      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-text-white w3-hover-text-white"><b>CS SP T2</b></a>
+      <a href="pros.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-text-white">Pros</a>
+      <a href="workday.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-text-white">Workday</a>
     </div>
   </nav>
 
@@ -81,95 +88,334 @@
 
   <!-- Overlay effect when opening sidebar on small screens -->
   <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
-    id="myOverlay"></div>
+    id="myOverlay">
+  </div>
 
   <!-- !PAGE CONTENT! -->
   <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
     <!-- Header -->
-    <div class="w3-container" style="margin-top:80px" id="showcase">
-      <h1 class="w3-jumbo w3-text-green text-shadow"><b>Customer Service</b></h1>
+    <div class="w3-container" style="margin-top:80px">
       <h1 class="w3-xxxlarge w3-text-khaki text-shadow"><b>Call Flow</b></h1>
       <hr style="width:50px;border:5px solid #00e300" class="w3-round shadow">
     </div>
-
-    <!-- Quick Sheets (modals) -->
+    <!-- Call Flow -->
     <div class="w3-row-padding">
-    <div class="w3-half w3-margin-bottom">
-      <div class="w3-darker-hex w3-round-large w3-padding shadower">
-        <h3 class="w3-text-khaki w3-xlarge">Intro</h3>
-        <p class="notes">Thank you for choosing Greenix.  This is Brad</p>
-        <p class="notes">Who do I have the pleasure of speaking with today?</p>
-        <h3 class="w3-text-khaki w3-xlarge">Build Rapport</h3>
-        <p class="notes">Hi Susan!</p>
-        <p class="notes">How are you today?</p>    
-        <h3 class="w3-text-khaki w3-xlarge">Verify</h3>
-        <p class="notes">Can you verify your addresss please?</p>
-        <p class="notes">Thank you for that.</p>
-        <p class="notes">How can I help you?</p>
-        <p>&nbsp;</p>
+      <div class="w3-half w3-margin-bottom">
+        <div class="w3-hex w3-round-large w3-padding shadow">
+          <h3 class="w3-text-khaki text-shadow w3-xxlarge"><b>Intro</b></h3>
+          <p class="notes"><b>Thank you for choosing Greenix. This is Brad</b></p>
+          <p class="notes"><b>Who do I have the pleasure of speaking with today?</b></p>
+          <h3 class="w3-text-khaki text-shadow w3-xxlarge"><b>Build Rapport</b></h3>
+          <p class="notes"><b>Hi Susan!</b></p>
+          <p class="notes"><b>How are you today?</b></p>
+          <h3 class="w3-text-khaki text-shadow w3-xxlarge"><b>Verify</b></h3>
+          <p class="notes"><b>Can you verify your addresss please?</b></p>
+          <p class="notes"><b>Thank you for that.</b></p>
+          <p class="notes"><b>How can I help you?</b></p>
+          <p>&nbsp;</p>
+        </div>
+      </div>
+      <div class="w3-half w3-margin-bottom">
+        <div class="w3-hex w3-round-large shadow w3-center" style="padding-bottom: 20px;">
+          <div class="w3-padding-a10">
+            <button onclick="openIframeModal('qs/diagnostic.html')" type="button"
+              class="w3-button w3-green w3-round-large w3-margin-top">
+              Diagnostic
+            </button>
+          </div>
+          <div class="w3-padding-a10">
+            <button onclick="openIframeModal('qs/triplea.html')" type="button"
+              class="w3-button w3-green w3-round-large w3-margin-top">
+              Triple A
+            </button>
+          </div>
+          <div class="w3-padding-a10">
+            <button onclick="openIframeModal('qs/queues.html')" type="button"
+              class="w3-button w3-green w3-round-large w3-margin-top">
+              Queues
+            </button>
+          </div>
+          <div class="w3-padding-a10">
+            <button onclick="openIframeModal('qs/t1offers.html')" type="button"
+              class="w3-button w3-green w3-round-large w3-margin-top">
+              T1 Offers
+            </button>
+          </div>
+          <div class="w3-padding-a10">
+            <button onclick="openIframeModal('qs/t2offers.html')" type="button"
+              class="w3-button w3-green w3-round-large w3-margin-top">
+              T2 Offers
+            </button>
+          </div>
+          <p style="padding-bottom: 8px;">&nbsp;</p>
+        </div>
       </div>
     </div>
-    <div class="w3-half w3-margin-bottom">
-      <div class="w3-darker-hex w3-round-large shadower w3-center" style="padding-bottom: 20px;">
-        <div class="w3-padding-a10">
-          <button onclick="openIframeModal('qs/diagnostic.html')" type="button"
-            class="w3-button w3-green w3-round-large shadower w3-margin-top">
-            Diagnostic
-          </button>
+    <!-- Notes, Email & Texts Header -->
+    <div class="w3-container" style="margin-top:80px">
+      <h1 class="w3-xxxlarge w3-text-khaki text-shadow"><b>Notes, Email & Texts</b></h1>
+      <hr style="width:50px;border:5px solid #00e300" class="w3-round shadow">
+    </div>
+    <!-- Notes, Email & Texts -->
+    <div class="w3-row-padding">
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-hex w3-round-large shadow w3-center" style="padding-bottom: 20px;">
+          <div class="w3-padding-a10">
+            <button onclick="window.open('https://bradvaring7.github.io/CSSP-Tools/Notes/', '_blank')" type="button"
+              class="w3-button w3-green w3-round-large w3-margin-top">
+              Call Notes Form
+            </button>
+          </div>
+          <div class="w3-padding-a10">
+            <button onclick="openIframeModal('qs/red-yellow.html')" type="button"
+              class="w3-button w3-green w3-round-large w3-margin-top">
+              Red & Yellow
+            </button>
+          </div>
+          <p>&nbsp;</p>
         </div>
-        <div class="w3-padding-a10">
-          <button onclick="openIframeModal('qs/triplea.html')" type="button"
-            class="w3-button w3-green w3-round-large shadower w3-margin-top">
-            Triple A
-          </button>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-hex w3-round-large shadower w3-center" style="padding-bottom: 20px;">
+          <div class="w3-padding-a10">
+            <button onclick="openIframeModal('qs/dispositions.html')" type="button"
+              class="w3-button w3-green w3-round-large w3-margin-top">
+              Dispositions
+            </button>
+          </div>
+          <div class="w3-padding-a10">
+
+          </div>
+          <p>&nbsp;</p>
         </div>
-        <div class="w3-padding-a10">
-          <button onclick="openIframeModal('qs/queues.html')" type="button"
-            class="w3-button w3-green w3-round-large shadower w3-margin-top">
-            Queues
-          </button>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-hex w3-round-large shadow w3-center" style="padding-bottom: 20px;">
+          <!-- Add more buttons here if needed -->
+          <p>&nbsp;</p>
+          <p style="padding-bottom: 8px;">&nbsp;</p>
         </div>
-        <div class="w3-padding-a10">
-          <button onclick="openIframeModal('qs/call-transfers.html')" type="button"
-            class="w3-button w3-green w3-round-large shadower w3-margin-top">
-            Call Transfers
-          </button>
-        </div>
-        <p>&nbsp;</p>
-        <p style="padding-bottom: 8px;">&nbsp;</p>
       </div>
     </div>
-  </div>
+    <!-- Escalations & Forms Header -->
+    <div class="w3-container" style="margin-top:80px">
+      <h1 class="w3-xxxlarge w3-text-khaki text-shadow"><b>Escalations & Forms</b></h1>
+      <hr style="width:50px;border:5px solid #00e300" class="w3-round shadow">
+    </div>
+    <!-- Escalations & Forms -->
+    <div class="w3-row-padding">
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-hex w3-round-large shadow w3-center" style="padding-bottom: 20px;">
+          <div class="w3-padding-a10">
+            <button onclick="openIframeModal('qs/codered.html')" type="button"
+              class="w3-button w3-round-large w3-margin-top" style="color: #f9f3c0; background-color: red;">
+              Code Red
+            </button>
+          </div>
+          <div class="w3-padding-a10">
+            <button onclick="openIframeModal('qs/red-yellow.html')" type="button"
+              class="w3-button w3-green w3-round-large w3-margin-top">
+              Red & Yellow
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-hex w3-round-large shadow w3-center" style="padding-bottom: 20px;">
+          <div class="w3-padding-a10">
+            <button onclick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=-ton27IImE2RhoARXfKc5Cv6NDAvMYpKr_W65xHiRiVUNzBMTEFaVjdFTDQxVFZFWlc1VEJQSzBFVS4u', '_blank')" type="button"
+              class="w3-button w3-green w3-round-large w3-margin-top">
+              Pending Cancel Form
+            </button>
+          </div>
+          <div class="w3-padding-a10">
 
+          </div>
+          <div class="w3-padding-a10">
+  
+          </div>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-hex w3-round-large shadow w3-center" style="padding-bottom: 20px;">
+          <!-- Add more buttons here if needed -->
+          <p>&nbsp;</p>
+          <p style="padding-bottom: 8px;">&nbsp;</p>
+        </div>
+      </div>
+    </div>
+    <!-- Billing Header -->
+    <div class="w3-container" style="margin-top:80px">
+      <h1 class="w3-xxxlarge w3-text-khaki text-shadow"><b>Billing</b></h1>
+      <hr style="width:50px;border:5px solid #00e300" class="w3-round shadow">
+    </div>
+    <!-- Billing -->
+    <div class="w3-row-padding">
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-hex w3-round-large w3-padding shadow w3-center" style="padding-bottom: 20px;">
+          <h3 class="w3-text-khaki text-shadow w3-xxlarge"><b>Coupon Codes</b></h3>
+          <p class="notes">Billing<span class="w3-text-khaki"> | </span>System Error</p>
+          <p class="notes">Goodwill<span class="w3-text-khaki"> | </span>Field</p>
+          <p class="notes">Goodwill<span class="w3-text-khaki"> | </span>Office</p>
+          <p class="notes">Schedule<span class="w3-text-khaki"> | </span>Off Cycle</p>
+          <p class="notes">Pronotional<span class="w3-text-khaki"> | </span>Autopay</p>
+          <p class="notes">Promotional<span class="w3-text-khaki"> | </span>Referral</p>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-hex w3-round-large shadow w3-center" style="padding-bottom: 20px;">
+          <div class="w3-padding-a10">
 
-    
+          </div>
+          <div class="w3-padding-a10">
 
+          </div>
+          <div class="w3-padding-a10">
+
+          </div>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-hex w3-round-large shadow w3-center" style="padding-bottom: 20px;">
+          <!-- Add more buttons here if needed -->
+          <p>&nbsp;</p>
+          <p style="padding-bottom: 8px;">&nbsp;</p>
+        </div>
+      </div>
+    </div>   
+    <!-- Scheduling Header -->
+    <div class="w3-container" style="margin-top:80px">
+      <h1 class="w3-xxxlarge w3-text-khaki text-shadow"><b>Scheduling Appts</b></h1>
+      <hr style="width:50px;border:5px solid #00e300" class="w3-round shadower">
+    </div>
+    <!-- Scheduling -->
+    <div class="w3-row-padding">
+      <div class="w3-half w3-margin-bottom">
+        <div class="w3-hex w3-round-large w3-padding shadow">
+          <h3 class="w3-text-khaki text-shadow w3-xxlarge"><b>9-Mile Rule</b></h3>
+          <p class="notes w3-text-khaki">Does the route stay under the duration of 5 hours for a Monday or 6 hours for any other day?</p>
+          <p class="notes w3-text-khaki">Does the distance in the bottom left corner stay under 60 miles?</p>
+          <p class="notes w3-text-khaki">Does the route have at least 2 under 9 without any over 9?</p>
+          <p class="notes text-shadow w3-xxlarge"><b>Yes All 3, Schedule w/o Permission</b></p>
+          <hr style="width:50px;border:5px solid #00e300" class="w3-round shadower">
+          <p class="notes w3-text-khaki">If the route has 3 under 9 miles &</p>
+          <p class="notes w3-text-khaki">No more than 3 over 9 miles</p>
+          <p class="notes w3-xxlarge">Ask for:</p>
+          <img src="assets/pts.png" style="width: 100%; height: auto; margin-bottom: 10px;">
+        </div>
+      </div>
+      <div class="w3-half w3-margin-bottom">
+        <div class="w3-hex w3-round-large w3-padding shadow">
+          <h3 class="w3-text-khaki text-shadow w3-xxlarge"><b>Scheduling Rules</b></h3>
+          <p class="notes w3-text-khaki">🚫 No same day appt w/o permission from the BM, SM, Field Support or SP.</p>
+          <p class="notes w3-text-khaki">💬 Always let SP know when adding same day appt.</p>
+          <p class="notes w3-text-khaki">❌ No weekends.</p>
+          <p class="notes w3-text-khaki">🔜 Appt push out max is 2 weeks.</p>
+          <p class="notes w3-text-khaki">💸 No appts for CXs with balance over $70.</p>
+          <p class="notes w3-text-khaki">📅 Always send reminder when appt is scheduled.</p>
+          <p class="notes w3-text-khaki">️️5️⃣ Monday route duration limit is 5 hrs. </p>
+          <p class="notes w3-text-khaki">6️⃣ Tue-Fri route duration limit is 6 hrs.</p>
+          <p class="notes w3-text-khaki">👷‍♂️ VIP, German roach, Tick Flea interior reduction, termite baiting & bed bug can only be service by SPs with a S symbol on their route.
+          <p class="notes w3-text-khaki">🕗 No 8-10am appts on Mondays.</p>
+          <p class="notes w3-text-khaki">🚫 Do not schedule on an empty route.</p>
+          <hr style="width:50px;border:5px solid #00e300" class="w3-round shadow">
+          <p class="notes w3-text-khaki">'No Show' same day appts and Cancel or reschedulre future appts.</p>
+          <hr style="width:50px;border:5px solid #00e300" class="w3-round shadow">
+          <p class="notes text-shadow w3-xxlarge"><b>Dump Routes</b></p>
+          <p class="notes w3-text-khaki">'No Tech Assigned'</p>
+          <p class="notes w3-text-khaki">Dates far out & only route on the day.</p>
+          <p class="notes w3-text-khaki">Don't schedule on Mondays DRs</p>
+          <hr style="width:50px;border:5px solid #00e300" class="w3-round shadow">
+          <p class="notes text-shadow w3-xxlarge"><b>Look Out For These:</b></p>
+          <p class="notes w3-text-khaki">Jobs SPs can't do, Amount of timed appts, Max jobs, Latest time & DO NOT ADD</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scheduling Header -->
+    <div class="w3-container" style="margin-top:80px">
+      <h1 class="w3-xxxlarge w3-text-khaki text-shadow"><b>Scheduling Requests</b></h1>
+      <p class="w3-xxlarge text-shadow"><b>Route Creation is the only ticket type that does not require a placeholder appt.</b></p>
+      <hr style="width:50px;border:5px solid #00e300" class="w3-round shadow">
+    </div>
+    <div class="w3-row-padding">
+      <div class="w3-third w3-margin-bottom" >
+        <div class="w3-round-large shadow w3-center" style="padding-bottom:30px; background-color: #005E50;">
+          <h3 class="w3-text-khaki text-shadow w3-xxlarge"><b>Priority</b></h3>
+          <div>
+            <button onclick="window.open('https://greenix.atlassian.net/servicedesk/customer/portal/40/group/113/create/518', '_blank')" type="button"
+              class="w3-button w3-round-large w3-margin-bottom" style="background-color:#CAF0CC !important;">
+              <b style="color:#005E50;">Submit</b>
+            </button>
+          </div>
+          <div>
+            <button onclick="window.open('https://greenix.atlassian.net/servicedesk/customer/user/requests?pIds=40&page=1&reporter=all&rtIds=518&sortBy=createdDate&sortOrder=DESC&statuses=open&statuses=closed', '_blank')" type="button"
+              class="w3-button w3-round-large w3-margin-bottom" style="background-color:#CAF0CC !important;">
+              <b style="color:#005E50;">View</b>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-round-large shadow w3-center" style="padding-bottom:30px; background-color: #A4262C;">
+          <h3 class="w3-text-khaki text-shadow w3-xxlarge"><b>Reservice</b></h3>
+          <div>
+            <button onclick="window.open('https://greenix.atlassian.net/servicedesk/customer/portal/31/group/100/create/390', '_blank')" type="button"
+              class="w3-button w3-round-large w3-margin-bottom" style="background-color:#F5CCCF !important;">
+              <b style="color:#A4262C;">Submit</b>
+            </button>
+          </div>
+          <div>
+            <button onclick="window.open('https://greenix.atlassian.net/servicedesk/customer/user/requests?pIds=31&page=1&reporter=all&rtIds=390&sortBy=createdDate&sortOrder=DESC&statuses=open&statuses=closed', '_blank')" type="button"
+              class="w3-button w3-round-large w3-margin-bottom" style="background-color:#F5CCCF !important;">
+              <b style="color:#A4262C;">View</b>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-round-large shadow w3-center" style="padding-bottom:30px; background-color: #7252AA;">
+          <h3 class="w3-text-khaki text-shadow w3-xxlarge"><b>Route</b></h3>
+          <div>
+            <button onclick="window.open('https://greenix.atlassian.net/servicedesk/customer/portal/31/group/100/create/390', '_blank')" type="button"
+              class="w3-button w3-round-large w3-margin-bottom" style="background-color:#e9dbff !important;">
+              <b style="color:#7252AA;">Submit</b>
+            </button>
+          </div>
+          <div>
+            <button onclick="window.open('https://greenix.atlassian.net/servicedesk/customer/user/requests?pIds=31&page=1&reporter=all&rtIds=390&sortBy=createdDate&sortOrder=DESC&statuses=open&statuses=closed', '_blank')" type="button"
+              class="w3-button w3-round-large w3-margin-bottom" style="background-color:#e9dbff !important;">
+              <b style="color:#7252AA;">View</b>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>   
     <!-- Modal for displaying an HTML file -->
     <div id="iframeModal" class="w3-modal"
-      style="padding:0; background:rgba(0,0,0,0.92); position:fixed; top:0; left:0; width:100vw; height:100vh; margin:0; border:none;"
+      style="padding:0; background:rgba(0, 0, 0, 0); position:fixed; top:0; left:0; width:100vw; height:100vh; margin:0; border:none;"
       onclick="this.style.display='none'">
       <div class="w3-modal-content w3-animate-zoom"
         style="width:100vw; height:100vh; max-width:100vw; max-height:100vh; margin:0; border:none; border-radius:0; box-shadow:none; background:transparent; overflow:hidden; position:relative;">
         <span class="w3-button w3-black w3-xxlarge w3-display-topright"
           onclick="document.getElementById('iframeModal').style.display='none';event.stopPropagation();"
           style="z-index:2; position:absolute; right:0; top:0;">&times;</span>
-        <iframe id="modalIframe"
-          src=""
+        <iframe id="modalIframe" src=""
           style="width:100vw; height:100vh; border:none; display:block; margin:0; padding:0; background:transparent;"
           title="Quick Sheet Modal"></iframe>
       </div>
     </div>
+    
     <!-- End page content -->
-
   </div>
-
-  <!-- W3.CSS Container -->
-  <div class="w3-dark-green w3-container w3-padding-16" style="margin-top:75px;padding-right:58px">
-    <p class="w3-right"><a href="sip:bvaring@greenixpc.com" title="W3.CSS" target="_blank" class="w3-hover-opacity"
-        style="text-decoration: none;">@Brad Adams</a></p>
-  </div>
-
+<!-- Footer -->
+<div class="w3-dark-green w3-container w3-padding" style="margin-top:75px;padding-right:58px">
+  <p class="w3-right">
+    <a href="sip:bvaring@greenixpc.com" title="W3.CSS" target="_blank" class="w3-hover-opacity" style="text-decoration: none;">@Brad Adams</a>
+    <img src="assets/footerlogo.png" style="height:80px;width:auto;margin-left:15px;vertical-align:middle;" alt="Greenix Logo">
+  </p>
+</div>
   <script>
     // Script to open and close sidebar
     function w3_open() {
@@ -199,7 +445,5 @@
       modal.style.display = 'block';
     }
   </script>
-
 </body>
-
 </html>
