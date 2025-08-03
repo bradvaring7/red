@@ -422,3 +422,8 @@ w3-border-bottom{border-bottom:1px solid #ccc!important;}
   color: #222; /* caption text color */
   font-size: 1.2em;
 }
+p.notes{
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}

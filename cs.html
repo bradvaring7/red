@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>W3.CSS Template</title>
+  <title>Customer Service - Brad Varing, CS SP T2</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/styles.css">
@@ -89,185 +89,62 @@
     <!-- Header -->
     <div class="w3-container" style="margin-top:80px" id="showcase">
       <h1 class="w3-jumbo w3-text-green text-shadow"><b>Customer Service</b></h1>
-      <h1 class="w3-xxxlarge w3-text-khaki text-shadow"><b>Quick Sheets</b></h1>
+      <h1 class="w3-xxxlarge w3-text-khaki text-shadow"><b>Call Flow</b></h1>
       <hr style="width:50px;border:5px solid #00e300" class="w3-round shadow">
     </div>
 
     <!-- Quick Sheets (modals) -->
     <div class="w3-row-padding">
-      <div class="w3-quarter w3-center">
-        <button onclick="openIframeModal('qs/call-transfers.html')" type="button"
-          class="w3-button w3-green w3-round-large shadower w3-margin-top">
-          Call Transfers
-        </button>
-      </div>
-      <div class="w3-quarter w3-center">
-        <button onclick="openIframeModal('qs/all-transfers.htm')" type="button"
-          class="w3-button w3-green w3-round-large shadower w3-margin-top">
-          Call Transfers
-        </button>
-      </div>
-      <div class="w3-quarter w3-center">
-        <button onclick="openIframeModal('qs/call-transfers.htm')" type="button"
-          class="w3-button w3-green w3-round-large shadower w3-margin-top">
-          Call Transfers
-        </button>
-      </div>
-      <div class="w3-quarter w3-center">
-        <button onclick="openIframeModal('qs/call-transfers.htm')" type="button"
-          class="w3-button w3-green w3-round-large shadower w3-margin-top">
-          Call Transfers
-        </button>
+    <div class="w3-half w3-margin-bottom">
+      <div class="w3-darker-hex w3-round-large w3-padding shadower">
+        <h3 class="w3-text-khaki w3-xlarge">Intro</h3>
+        <p class="notes">Thank you for choosing Greenix.  This is Brad</p>
+        <p class="notes">Who do I have the pleasure of speaking with today?</p>
+        <h3 class="w3-text-khaki w3-xlarge">Build Rapport</h3>
+        <p class="notes">Hi Susan!</p>
+        <p class="notes">How are you today?</p>    
+        <h3 class="w3-text-khaki w3-xlarge">Verify</h3>
+        <p class="notes">Can you verify your addresss please?</p>
+        <p class="notes">Thank you for that.</p>
+        <p class="notes">How can I help you?</p>
+        <p>&nbsp;</p>
       </div>
     </div>
-
-    <!-- Modal for full size images on click-->
-    <div id="modal01" class="w3-modal" style="padding-top:0" onclick="this.style.display='none'">
-      <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
-      <div class="w3-modal-content w3-animate-zoom w3-center w3-padding-64">
-        <img id="img01" class="w3-image">
-        <p id="caption"></p>
-      </div>
-    </div>
-
-    <!-- Services -->
-    <div class="w3-container" style="margin-top:80px" id="services">
-      <h1 class="w3-xxxlarge w3-text-khaki text-shadow"><b>Services</b></h1>
-      <hr style="width:75px;border:6px solid #00e300" class="w3-round shadow">
-      <p style="text-shadow">We are a interior design service that focus on what's best for your home and what's best
-        for you!</p>
-      <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
-        elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat.
-      </p>
-    </div>
-
-    <!-- Designers -->
-    <div class="w3-container" id="designers" style="margin-top:80px">
-      <h1 class="w3-xxxlarge w3-text-khaki"><b>Designers.</b></h1>
-      <hr style="width:75px;border:6px solid #00e300" class="w3-round shadow">
-      <p>The best team 75 the world.</p>
-      <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
-        elit, sed do eiusmod tempor
-        incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-      <p><b>Our designers are thoughtfully chosen</b>:</p>
-    </div>
-
-    <!-- The Team -->
-    <div class="w3-row-padding">
-      <div class="w3-col m4 w3-margin-bottom">
-        <div class="w3-khaki w3-round-large w3-padding-a10">
-          <div class="w3-container">
-            <h3 class="w3-text-black w3-xxxlarge w3-center text-shadow w3-padding-0">John Doe</h3>
-            <h4 class="w3-text-hex text-shadow w3-xxlarge w3-center w3-padding-0"><b>CEO & Founder</b></b></h4>
-            <p class="w3-center">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
-              elementum.</p>
-          </div>
+    <div class="w3-half w3-margin-bottom">
+      <div class="w3-darker-hex w3-round-large shadower w3-center" style="padding-bottom: 20px;">
+        <div class="w3-padding-a10">
+          <button onclick="openIframeModal('qs/diagnostic.html')" type="button"
+            class="w3-button w3-green w3-round-large shadower w3-margin-top">
+            Diagnostic
+          </button>
         </div>
-      </div>
-      <div class="w3-col m4 w3-margin-bottom">
-        <div class="w3-khaki w3-round-large w3-padding-a10">
-          <div class="w3-container">
-            <h3 class="w3-text-black w3-xxxlarge w3-center text-shadow w3-padding-0">John Doe</h3>
-            <h4 class="w3-text-hex text-shadow w3-xxlarge w3-center w3-padding-0"><b>CEO & Founder</b></b></h4>
-            <p class="w3-center">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
-              elementum.</p>
-          </div>
+        <div class="w3-padding-a10">
+          <button onclick="openIframeModal('qs/triplea.html')" type="button"
+            class="w3-button w3-green w3-round-large shadower w3-margin-top">
+            Triple A
+          </button>
         </div>
-      </div>
-      <div class="w3-col m4 w3-margin-bottom">
-        <div class="w3-khaki w3-round-large w3-padding-a10">
-          <div class="w3-container">
-            <h3 class="w3-text-black w3-xxxlarge w3-center text-shadow w3-padding-0">John Doe</h3>
-            <h4 class="w3-text-hex text-shadow w3-xxlarge w3-center w3-padding-0"><b>CEO & Founder</b></b></h4>
-            <p class="w3-center">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
-              elementum.</p>
-          </div>
+        <div class="w3-padding-a10">
+          <button onclick="openIframeModal('qs/queues.html')" type="button"
+            class="w3-button w3-green w3-round-large shadower w3-margin-top">
+            Queues
+          </button>
         </div>
-      </div>
-
-    </div>
-
-    <!-- Packages / Pricing Tables -->
-    <div class="w3-container" id="packages" style="margin-top:75px">
-      <h1 class="w3-xxxlarge w3-text-green"><b>Packages.</b></h1>
-      <hr style="width:65px;border:6px solid #00c500" class="w3-round-medium shadower">
-      <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure</p>
-    </div>
-
-    <div class="w3-row-padding">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-light-grey w3-center">
-          <li class="w3-darker-hex w3-xxlarge w3-padding-16"><b>Basic</b></li>
-          <li class="w3-padding-16">Floorplanning</li>
-          <li class="w3-padding-16">10 hours support</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">20% furniture discount</li>
-          <li class="w3-padding-16">Good deals</li>
-          <li class="w3-padding-16">
-            <h2>$ 199</h2>
-            <span class="w3-opacity">per room</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-
-      <div class="w3-half shadower">
-        <ul class="w3-ul w3-light-grey w3-center">
-          <li class="w3-green w3-xxlarge w3-padding-16 "><b>Pro</b></li>
-          <li class="w3-padding-16">Floorplanning</li>
-          <li class="w3-padding-16">50 hours support</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">50% furniture discount</li>
-          <li class="w3-padding-16">GREAT deals</li>
-          <li class="w3-padding-16">
-            <h2>$ 249</h2>
-            <span class="w3-opacity">per room</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-green w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
+        <div class="w3-padding-a10">
+          <button onclick="openIframeModal('qs/call-transfers.html')" type="button"
+            class="w3-button w3-green w3-round-large shadower w3-margin-top">
+            Call Transfers
+          </button>
+        </div>
+        <p>&nbsp;</p>
+        <p style="padding-bottom: 8px;">&nbsp;</p>
       </div>
     </div>
+  </div>
 
-    <!-- Contact -->
-    <div class="w3-container" id="contact" style="margin-top:75px">
-      <h1 class="w3-xxxlarge w3-text-green"><b>Contact.</b></h1>
-      <hr style="width:65px;border:6px solid #00c500" class="w3-round-medium shadower">
-      <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new
-        people!</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-section">
-          <label>Name</label>
-          <input class="w3-input w3-border w3-round-medium" type="text" name="Name" required>
-        </div>
-        <div class="w3-section">
-          <label>Email</label>
-          <input class="w3-input w3-border w3-round-medium" type="text" name="Email" required>
-        </div>
-        <div class="w3-section">
-          <label>Message</label>
-          <input class="w3-input w3-border w3-round-medium" type="text" name="Message" required>
-        </div>
-        <button type="submit" class="w3-button w3-round-medium w3-block w3-padding-large w3-green w3-margin-bottom">Send
-          Message</button>
-      </form>
-    </div>
+
+    
+
     <!-- Modal for displaying an HTML file -->
     <div id="iframeModal" class="w3-modal"
       style="padding:0; background:rgba(0,0,0,0.92); position:fixed; top:0; left:0; width:100vw; height:100vh; margin:0; border:none;"
