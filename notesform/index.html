@@ -8,31 +8,26 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0px;
-      padding: 0px 14px;
-      background-color: #003600;
-      color: antiquewhite;
+      margin: 0 8px 200px 8px;
+      padding: 0;
+      background-color: #00a000;
+      color: rgb(255, 255, 255);
       line-height: 1.5em;
     }
-
     h3 {
       font-size: 1.4em;
       font-weight: 400;
       padding: 0;
     }
-
     h4 {
       font-size: 1.2em;
       font-weight: 400;
       margin: 0;
       padding: 0;
     }
-
-    input[type=text],
-    select,
-    textarea {
+   input,select,textarea {
       width: 100%;
-      padding: 4px 8px;
+      padding: 4px 6px;
       margin: 8px 0;
       display: inline-block;
       border: 1px solid #00c300;
@@ -40,23 +35,24 @@
       box-sizing: border-box;
       font-size: 1.2rem !important;
       font-family: Arial, Helvetica, sans-serif !important;
-      background-color: #1e1c16;
+      background-color: #000000;
       color: #00ff00 !important;
       font-weight: 500 !important;
       box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.8), 0 1.5px 6px rgba(0, 0, 0, 0.22);
     }
 
     .noteblock {
-      background-color: #ffffff10;
+      background-color: #171d23;
       padding-left: 20px;
       padding-right: 20px;
       padding-bottom: 22px;
       padding-top: 14px;
       border-radius: 10px;
-      margin: 18px 0;
+      margin: 10px 0 6px 0;
       max-width: 600px;
+      color: white !important;
+      box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.8), 0 1.5px 6px rgba(0, 0, 0, 0.22);
     }
-
     button {
       background-color: #1e1c16;
       border: 1px solid #00c300 !important;
@@ -68,43 +64,12 @@
       font-size: 2rem;
       box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.8), 0 1.5px 6px rgba(0, 0, 0, 0.22);
     }
-
-    /* Add this to your existing CSS */
-    @media screen and (max-width: 768px) {
-      body {
-        padding: 0px 8px;
-      }
-
-      .noteblock {
-        padding: 15px;
-        margin: 10px 0;
-        max-width: 100%;
-      }
-
-      input[type=text],
-      textarea {
-        font-size: 16px !important;
-        /* Prevents zoom on iOS */
-        padding: 8px;
-      }
-
-      button {
-        font-size: 1.5rem;
-        padding: 8px 12px;
-        min-height: 44px;
-        /* Better touch target */
-      }
-
-      h4 {
-        font-size: 1.1em;
-      }
-    }
   </style>
 </head>
 
 <body>
-  <!-- After Call Section -->
-  <div>
+
+    <!-- After Call Section -->
     <div class="noteblock" id="aftercall">
       <h4>After Call Notes</h4>
       <input type="text" id="who" placeholder="Who?">
@@ -130,8 +95,17 @@
       <textarea id="situation" rows="2" placeholder="Pest Situation:"></textarea>
       <button onclick="copyRegular()">🆗</button>
     </div>
-  </div>
-<script>
+    <!-- Unlock Route Section -->
+    <div class="noteblock" id="unlockroute">
+      <h4>Unlock Route Request</h4>
+      <textarea id="rtbranch" rows="1" placeholder="Branch"></textarea>
+      <input type="date" rows="1" id="rtdate" placeholder="Date (mm/dd/yyyy)">
+      <textarea id="rtname" rows="1" placeholder="Route Name"></textarea>
+      <button onclick="copyUnlockRoute()">🆗</button>
+    </div>
+
+    
+  <script>
     async function copyAfterCall() {
       try {
         const who = document.getElementById("who");
@@ -198,6 +172,28 @@
         alert("❌ Unable to copy appointment notes. Please check form elements and clipboard permissions.");
       }
     }
+
+    async function copyUnlockRoute() {
+      try {
+        const branch = document.getElementById("rtbranch");
+        const date = document.getElementById("rtdate");
+        const routename = document.getElementById("rtname");
+
+        if (!branch || !date || !routename) throw new Error("Missing Unlock Route Request inputs.");
+
+        const text =
+          `Branch: ${branch.value}\n` +
+          `Date: ${date.value}\n` +
+          `Route Name: ${routename.value}`;
+
+        await navigator.clipboard.writeText(text);
+        alert("📆 Unlock Route Request Copied!");
+      } catch (err) {
+        console.error(err);
+        alert("❌ Unable to copy Unlock Route Request. Please check form elements and clipboard permissions.");
+      }
+    }
+
   </script>
 
 </body>
