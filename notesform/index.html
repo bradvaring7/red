@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0px;
+      padding: 0px 14px;
+      background-color: #003600;
+      color: antiquewhite;
+      line-height: 1.5em;
+    }
+
+    h3 {
+      font-size: 1.4em;
+      font-weight: 400;
+      padding: 0;
+    }
+
+    h4 {
+      font-size: 1.2em;
+      font-weight: 400;
+      margin: 0;
+      padding: 0;
+    }
+
+    input[type=text],
+    select,
+    textarea {
+      width: 100%;
+      padding: 4px 8px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #00c300;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 1.2rem !important;
+      font-family: Arial, Helvetica, sans-serif !important;
+      background-color: #1e1c16;
+      color: #00ff00 !important;
+      font-weight: 500 !important;
+      box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.8), 0 1.5px 6px rgba(0, 0, 0, 0.22);
+    }
+
+    .noteblock {
+      background-color: #ffffff10;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 22px;
+      padding-top: 14px;
+      border-radius: 10px;
+      margin: 18px 0;
+      max-width: 600px;
+    }
+
+    button {
+      background-color: #1e1c16;
+      border: 1px solid #00c300 !important;
+      border-radius: 5px;
+      color: antiquewhite;
+      padding: 0px 4px 3px 4px;
+      cursor: pointer;
+      margin-top: 10px;
+      font-size: 2rem;
+      box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.8), 0 1.5px 6px rgba(0, 0, 0, 0.22);
+    }
+
+    /* Add this to your existing CSS */
+    @media screen and (max-width: 768px) {
+      body {
+        padding: 0px 8px;
+      }
+
+      .noteblock {
+        padding: 15px;
+        margin: 10px 0;
+        max-width: 100%;
+      }
+
+      input[type=text],
+      textarea {
+        font-size: 16px !important;
+        /* Prevents zoom on iOS */
+        padding: 8px;
+      }
+
+      button {
+        font-size: 1.5rem;
+        padding: 8px 12px;
+        min-height: 44px;
+        /* Better touch target */
+      }
+
+      h4 {
+        font-size: 1.1em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- After Call Section -->
+  <div>
+    <div class="noteblock" id="aftercall">
+      <h4>After Call Notes</h4>
+      <input type="text" id="who" placeholder="Who?">
+      <textarea id="what" rows="2" placeholder="What?"></textarea>
+      <textarea id="resolution" rows="2" placeholder="Resolution:"></textarea>
+      <input type="text" id="followup" placeholder="Follow-up?">
+      <button onclick="copyAfterCall()">🆗</button>
+    </div>
+    <!-- Reservice Appointment Section -->
+    <div class="noteblock" id="reservice">
+      <h4>Reservice Notes</h4>
+      <textarea id="res_what" rows="2" placeholder="What?"></textarea>
+      <input type="text" id="res_where" placeholder="Where?">
+      <input type="text" id="res_when" placeholder="When?">
+      <input type="text" id="res_howmany" placeholder="How Many?">
+      <button onclick="copyReservice()">🆗</button>
+    </div>
+    <!-- Regular Appointment Section -->
+    <div class="noteblock" id="regular">
+      <h4>Regular Appointment Notes</h4>
+      <textarea id="reason" rows="2" placeholder="Reason?"></textarea>
+      <textarea id="context" rows="2" placeholder="Context:"></textarea>
+      <textarea id="situation" rows="2" placeholder="Pest Situation:"></textarea>
+      <button onclick="copyRegular()">🆗</button>
+    </div>
+  </div>
+
+</body>
+
+</html>
