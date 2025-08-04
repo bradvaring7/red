@@ -131,6 +131,74 @@
       <button onclick="copyRegular()">🆗</button>
     </div>
   </div>
+<script>
+    async function copyAfterCall() {
+      try {
+        const who = document.getElementById("who");
+        const what = document.getElementById("what");
+        const resolution = document.getElementById("resolution");
+        const followup = document.getElementById("followup");
+
+        if (!who || !what || !resolution || !followup) throw new Error("Missing After Call inputs.");
+
+        const text =
+          `Who? ${who.value}\n` +
+          `What? ${what.value}\n` +
+          `Resolution: ${resolution.value}\n` +
+          `Follow-up?: ${followup.value}`;
+
+        await navigator.clipboard.writeText(text);
+        alert("📞 After Call Notes Copied!");
+      } catch (err) {
+        console.error(err);
+        alert("❌ Unable to copy notes. Please check form elements and clipboard permissions.");
+      }
+    }
+
+    async function copyReservice() {
+      try {
+        const what = document.getElementById("res_what");
+        const where = document.getElementById("res_where");
+        const when = document.getElementById("res_when");
+        const howmany = document.getElementById("res_howmany");
+
+        if (!what || !where || !when || !howmany) throw new Error("Missing Reservice inputs.");
+
+        const text =
+          `What? ${what.value}\n` +
+          `Where? ${where.value}\n` +
+          `When? ${when.value}\n` +
+          `How Many? ${howmany.value}`;
+
+        await navigator.clipboard.writeText(text);
+        alert("🔧 Reservice Appointment Notes Copied!");
+      } catch (err) {
+        console.error(err);
+        alert("❌ Unable to copy reservice notes. Please check form elements and clipboard permissions.");
+      }
+    }
+
+    async function copyRegular() {
+      try {
+        const reason = document.getElementById("reason");
+        const context = document.getElementById("context");
+        const situation = document.getElementById("situation");
+
+        if (!reason || !context || !situation) throw new Error("Missing Regular Appointment inputs.");
+
+        const text =
+          `Reason? ${reason.value}\n` +
+          `Context: ${context.value}\n` +
+          `Pest Situation: ${situation.value}`;
+
+        await navigator.clipboard.writeText(text);
+        alert("📆 Regular Appointment Notes Copied!");
+      } catch (err) {
+        console.error(err);
+        alert("❌ Unable to copy appointment notes. Please check form elements and clipboard permissions.");
+      }
+    }
+  </script>
 
 </body>
 
